@@ -1,1 +1,7 @@
-<p>game works!</p>
+<h3>{{ question }}</h3>
+
+<div class="game-space">
+  <div *ngFor="let wordObject of wordsObject; index as i" class="word">
+    {{ wordObject.word }}
+  </div>
+</div>

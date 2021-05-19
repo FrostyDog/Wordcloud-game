@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { wordsPackData, inGameWords } from '../models/words';
-import { of } from 'rxjs';
-import { filter, map } from 'rxjs/operators';
+import { wordsPackData } from '../models/words';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -19,7 +18,6 @@ export class WordsService {
       map((oneSet) => this.getGameData(oneSet))
     );
   }
-
 
   private getGameData(data: wordsPackData) {
     return {
@@ -53,5 +51,4 @@ export class WordsService {
   //         result = -2;
   //     }
   // }
-
 }
