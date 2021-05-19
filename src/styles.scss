@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+app-root {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+a {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+}
