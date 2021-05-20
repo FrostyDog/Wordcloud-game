@@ -4,6 +4,8 @@
 
 Proudly made with Angular 11 (Ivy <3>)
 
+[Deployed version](https://wordcloud-game.vercel.app)
+
 Most of the potential reusable logic was moved to the `services`, while only strictly component releted stuff were left in `components`.
 `directive` folder is empty, and was created for the future purposes.
 
