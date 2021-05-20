@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { WordsService } from '../../services/words.service';
 import { ProfileService } from '../../services/profile.service';
 import { inGameWords } from '../../models/words';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-game',
@@ -19,6 +18,7 @@ export class GameComponent implements OnInit {
   wordsObject: inGameWords[];
   question: string;
   isGameFinished: boolean = false;
+
 
   ngOnInit(): void {
     this.wordsService.getWordsData(this.wordsLink).subscribe((data) => {
