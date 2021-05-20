@@ -9,6 +9,15 @@
   flex-direction: column;
 }
 
+h1 {
+  font-size: 2rem;
+
+}
+
 input {
-  padding: 10px;
+  padding: 12px;
+  font-size: 1.2rem;
+  min-width: 300px;
+  border-radius: 3px;
+  border: 2px solid rgba(112, 110, 110, 0.795);
 }

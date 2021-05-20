@@ -1,3 +1,7 @@
+:root {
+  --blue: #4093ff; // or any global you wish to share with components
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 app-root {
@@ -17,8 +22,10 @@ app-root {
 }
 
 a {
-  padding: 10px 20px;
-  background-color: blue;
-  color: white;
+  padding: 7px 20px;
+  margin: 10px;
+  border: 1px solid var(--blue);
+  color: var(--blue);
   text-decoration: none;
+  border-radius: 7px;
 }

@@ -1,2 +1,6 @@
-<p>Great job {{ name }}</p>
-<p>Your Scrore is  {{ score }}</p>
+<div class="text-wrapper">
+  <p *ngIf="score > 0">Congradulation, {{ name }}!</p>
+  <p *ngIf="0 > score">You can do better, {{ name }}!</p>
+  <p>Your Score:</p>
+</div>
+<p class="blue">{{ score }} points</p>

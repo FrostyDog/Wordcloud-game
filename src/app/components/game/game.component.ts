@@ -23,7 +23,8 @@ export class GameComponent implements OnInit {
   ngOnInit(): void {
     this.wordsService.getWordsData(this.wordsLink).subscribe((data) => {
       this.wordsObject = data.words;
-      this.question = data.question;
+      // Uppercase first letter
+      this.question = data.question[0].toUpperCase() + data.question.slice(1);
     });
   }
 
