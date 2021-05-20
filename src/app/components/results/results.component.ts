@@ -9,7 +9,9 @@ import { ProfileService } from '../../services/profile.service';
 export class ResultsComponent implements OnInit {
   constructor(public profileService: ProfileService) {}
   name: string = '';
+  score: number = 0;
   ngOnInit(): void {
     this.name = this.profileService.name;
+    this.score = this.profileService.score;
   }
 }

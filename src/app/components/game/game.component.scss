@@ -20,4 +20,15 @@
 
 .word {
   font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  &.picked {
+    color: gray;
+  }
+  &.correct {
+    color: green;
+  }
+  &.wrong {
+    color: red;
+  }
 }

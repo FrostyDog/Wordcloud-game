@@ -1,7 +1,19 @@
 <h3>{{ question }}</h3>
 
 <div class="game-space">
-  <div *ngFor="let wordObject of wordsObject; index as i" class="word">
+  <div
+    *ngFor="let wordObject of wordsObject; index as i"
+    class="word"
+    (click)="pickWord($event)"
+    [ngClass]="{
+      picked: wordObject.checked,
+      correct: wordObject.result == 2,
+      wrong: wordObject.result == -1
+    }"
+  >
     {{ wordObject.word }}
   </div>
 </div>
+
+<a *ngIf="!isGameFinished" (click)="countResult()"> check answers</a>
+<a *ngIf="isGameFinished" [routerLink]="['/results']"> finish game</a>

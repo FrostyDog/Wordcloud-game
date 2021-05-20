@@ -36,19 +36,4 @@ export class WordsService {
       };
     });
   }
-
-  // method for counting with only 1 array
-  //   switch (checked === correct) {
-  //     case (true && checked == true) : {
-  //         result = 2;
-  //     }
-
-  //     case (true && checked == false) : {
-  //         result = 0;
-  //     }
-
-  //     case (false): {
-  //         result = -2;
-  //     }
-  // }
 }
