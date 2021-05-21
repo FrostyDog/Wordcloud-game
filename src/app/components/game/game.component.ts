@@ -19,7 +19,6 @@ export class GameComponent implements OnInit {
   question: string;
   isGameFinished: boolean = false;
 
-
   ngOnInit(): void {
     this.wordsService.getWordsData(this.wordsLink).subscribe((data) => {
       this.wordsObject = data.words;
@@ -68,11 +67,5 @@ export class GameComponent implements OnInit {
       let pickedWordChecked = this.wordsObject[pickedWordIndex].checked;
       this.wordsObject[pickedWordIndex].checked = !pickedWordChecked;
     }
-  }
-
-  randomPosition(index: number) {
-    const top: number = Math.floor(Math.random() * (index + 3));
-    const left: number = Math.floor(Math.random() * (index + 3));
-    return `top: ${top}%, left: ${left}%`;
   }
 }
