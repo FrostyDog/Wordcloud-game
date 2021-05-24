@@ -11,4 +11,3 @@ Cloud was not implemented - great vertical list of words instead.
 Most of the potential reusable logic was moved to the `services`, while only strictly component releted stuff were left in `components`.
 `directive` folder is empty, and was created for the future purposes.
 
-#### P.S. Mr. Konrad - hope you had a nice day and will enjoy checking this repo.
